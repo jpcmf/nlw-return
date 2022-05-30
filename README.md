@@ -3,6 +3,7 @@
 ## :gear: techs/libs
 
     - vite
+    - react
     - tailwindcss
     - headlessui
     - phosphor-react
