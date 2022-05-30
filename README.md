@@ -1,10 +1,12 @@
 # nlw-return — mission impulse 2022
 
-## :gear: techs
+## :gear: techs/libs
 
     - vite
     - tailwindcss
     - headlessui
+    - phosphor-react
+    - html2canvas
 
 ## :gear: build setup
 
