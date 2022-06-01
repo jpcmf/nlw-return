@@ -7,10 +7,15 @@ import { FormEvent, useState } from 'react';
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
   onFeedbackRestartRequested: () => void;
+  onFeedbackSent: () => void;
 }
 
-export function FeedbackContentStep(props: FeedbackContentStepProps) {
-  const feedbackTypeInfo = feedbackTypes[props.feedbackType];
+export function FeedbackContentStep({
+  feedbackType,
+  onFeedbackRestartRequested,
+  onFeedbackSent,
+}: FeedbackContentStepProps) {
+  const feedbackTypeInfo = feedbackTypes[feedbackType];
 
   const [screenshot, setScreenshot] = useState<string | null>(null);
   const [comment, setComment] = useState<string>('');
@@ -18,6 +23,7 @@ export function FeedbackContentStep(props: FeedbackContentStepProps) {
   function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
     console.log({ screenshot, comment });
+    onFeedbackSent();
   }
 
   return (
@@ -26,7 +32,7 @@ export function FeedbackContentStep(props: FeedbackContentStepProps) {
         <button
           type="button"
           className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
-          onClick={props.onFeedbackRestartRequested}
+          onClick={onFeedbackRestartRequested}
         >
           <ArrowLeft weight="bold" className="w-4 h-4" />
         </button>
