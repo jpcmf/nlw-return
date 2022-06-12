@@ -8,6 +8,7 @@
     - headlessui
     - phosphor-react
     - html2canvas
+    - axios
 
 ## :gear: build setup
 
