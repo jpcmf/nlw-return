@@ -2,6 +2,7 @@
 
 ## :gear: techs/libs
 
+```bash
 - node/express
 - sqlite
 - postgresql
@@ -10,6 +11,7 @@
 - mailtrap
 - railway
 - jest
+```
 
 ## :gear: build setup
 
