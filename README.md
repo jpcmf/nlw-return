@@ -16,7 +16,7 @@
   </a>
 </p>
 
-This repository is related to a development of a web application including the Front-end with React and the Back-end with Node/Express in the [Next Level Week Return](https://lp.rocketseat.com.br/nlw-return) for improve skills.
+This repository is related to a development of a web application including the Front-end with React and the Back-end with Node/Express in the [Next Level Week Return](https://lp.rocketseat.com.br/nlw-return).
 
 Fell free to clone, share and collab. 🧑🏻‍💻🇧🇷
 
